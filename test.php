@@ -1,0 +1,5 @@
+HTP 
+<?php
+phpinfo();
+?>
+HTML
