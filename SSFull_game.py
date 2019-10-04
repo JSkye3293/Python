@@ -6,6 +6,7 @@ hold = 0
 while ex == 0:
 	if mode == "Skye":
 		hold = 1
+		answer = " "
 		while hold == 1:
 			answer = input("Greetings, creator. How was your travels?\nGreat \nMeh \nTerriable\n")
 		
@@ -42,3 +43,13 @@ while ex == 0:
 	elif mode == "exit":
 		print("Thanks for playing!\nJTP TECH")
 		exit()
+	elif mode == "help im stuck":
+		hold = 1
+		answer = " "
+		while hold == 1:
+			answer = input("Quick! Go grab a crowbar! Oh wait......")
+			if answer == "exit":
+				hold = 0
+				mode = "reset"
+			if answer == "help":
+				print("The crickets chirp in the wind at your meaningless cries for help.")
